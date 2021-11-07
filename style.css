@@ -1,0 +1,97 @@
+#welcome-section {
+    margin-top: 50px;
+    height : 100vh;
+    background-image: linear-gradient(lavender, lightcoral, lightseagreen); 
+  }
+  
+#navbar {
+    background-color: #eae6ea;
+  }
+  
+.foo-style {
+    font-size: 1.3rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 400;
+    color: #310a0a;
+    text-decoration: none;
+  }
+  
+.welcome-title {
+    font-size: 2.5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 600;
+    background-clip: text;
+    background: -webkit-linear-gradient(brown, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+.welcome-desc {
+    font-size: 1.3rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 400;
+    font-style: italic;
+    
+  }
+  
+#projects {
+    background-image: linear-gradient(lightseagreen, wheat, tan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#contact {
+    height: 100vh;
+    background-color: tan;
+  }
+  
+#nav-item-style {
+    font-family: monaca;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 0 10px 0;
+  }
+  
+#nav-text {
+    color: #310a0a;
+  }
+  
+.contact-title {
+    font-size: 2.2rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 500;
+    color: #310a0a;
+  }
+  
+.contact-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    overflow: hidden;
+  }
+.contact-item {
+    float: left;
+  }
+  
+.contact-link {
+    text-decoration: none;
+    color: rosybrown;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+li a:hover {
+    color: #310a0a;
+    text-shadow: 2px 1px 4px #978787;
+  }
+  
+div a:hover {
+    color: salmon;
+    font-size: 1.25rem;
+  }
+  
