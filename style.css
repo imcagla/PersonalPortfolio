@@ -1,19 +1,50 @@
 #welcome-section {
     margin-top: 50px;
     height : 100vh;
-    background-image: linear-gradient(lavender, lightcoral, lightseagreen); 
+    background: linear-gradient(45deg, #fd9e82, #fa79aa, #7bd6f7, #80f8dc);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
   }
-  
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
 #navbar {
-    background-color: #eae6ea;
+    background-color: white;
   }
   
 .foo-style {
     font-size: 1.3rem;
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: 400;
-    color: #310a0a;
+    color: white;
     text-decoration: none;
+    background-color: darkslategray;
+    border-color: darkslategray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-style {
+  border-radius: 10px;
+  
+}
+
+.card-style:hover, div a:hover {
+  border-color:darkslategray;
+  border-width: 2px;
+  text-shadow: 2px 1px 4px rgba(224, 255, 255, 0.63);
+  color: white;
+  font-size: 1.3rem;
 }
 
 .card-img-top {
@@ -41,16 +72,16 @@
   }
   
 #projects {
-    background-image: linear-gradient(lightseagreen, wheat, tan);
+    background-color: whitesmoke;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
 #contact {
     height: 100vh;
-    background-color: tan;
+    background-color:whitesmoke;
   }
   
 #nav-item-style {
@@ -96,8 +127,4 @@ li a:hover {
     text-shadow: 2px 1px 4px #978787;
   }
   
-div a:hover {
-    color: salmon;
-    font-size: 1.25rem;
-  }
   
