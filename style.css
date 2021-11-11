@@ -14,7 +14,13 @@
     font-weight: 400;
     color: #310a0a;
     text-decoration: none;
-  }
+}
+
+.card-img-top {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
   
 .welcome-title {
     font-size: 2.5rem;
