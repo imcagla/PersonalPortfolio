@@ -54,7 +54,7 @@ body {
 .card-style:hover, div a:hover {
   border-color:#df4759;
   border-width: 2px;
-  text-shadow: 2px 1px 4px rgba(224, 255, 255, 0.63);
+  /* text-shadow: 2px 1px 4px rgba(224, 255, 255, 0.63); */
   color: white;
   font-size: 1.3rem;
 }
@@ -70,7 +70,7 @@ body {
     /* font-family: "Lucida Console", "Courier New", monospace; */
     font-weight: 600;
     background-clip: text;
-    background: -webkit-linear-gradient(#fc9678, black);
+    background: -webkit-linear-gradient(gray, black);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -138,15 +138,16 @@ body {
     font-size: 1.2rem;
     overflow: hidden;
   }
+
+
 .contact-item {
     float: left;
   }
   
 .contact-link {
     text-decoration: none;
-    color: #e0ffffa1;
-    text-align: center;
-    padding: 16px;
+    color: #757575a1;
+    padding: 10px;
     text-decoration: none;
     font-weight: bold;
   }
@@ -169,7 +170,6 @@ body {
 #contact li a:hover {
   color:white;
 }
-
   
 li {
   list-style-type: none;
