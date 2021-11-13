@@ -7,6 +7,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -15,7 +18,7 @@
     <a href="#welcome-section"><i class="far fa-star ms-4 fa-2x text-danger"></i></a>
     <ul class="navbar-nav ms-auto">
       <li class="nav-item" id="nav-item-style">
-        <a class="nav-link active" aria-current="page" id="nav-text" href="#about-section">About Me</a>
+        <a class="nav-link active" aria-current="page" id="nav-text" onclick="skillAnim()" href="#about-section">About Me</a>
       </li>
       <li class="nav-item" id="nav-item-style">
         <a class="nav-link" id="nav-text" href="#projects">Work</a>
@@ -31,7 +34,9 @@
     <h1 class="welcome-title">Hey I am Çağla</h1>
     <p class="welcome-desc">welcome to my page </p>
     <i class="far fa-star" style="color:white;"></i>
-    
+    <a onclick="skillAnim()" href="#about-section">
+      <i class="fas fa-chevron-down fa-3x text-light arc-anim"></i>
+    </a>
   </section>
 
   <!--About Section-->
@@ -85,7 +90,7 @@
               <img class="card-img-top" src="https://raw.githubusercontent.com/imcagla/TechnicalDocumentationPage/master/TechDoc.PNG" alt="">
               </div>
               <div class="text-center card-footer bg-danger">
-                JS Documentation
+                Documentation
               </div>
             </a>
         </div>
@@ -148,5 +153,7 @@
   <footer>
     
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
