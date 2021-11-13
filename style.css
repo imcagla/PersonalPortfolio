@@ -91,6 +91,23 @@ body {
     align-items: center;
   }
 
+@media (max-width:575px) {
+  #projects {
+    margin-top:10px;
+    height: 200vh;
+  }
+  .card-style {
+    width: 70vw;
+    height: auto;
+    left: 15%
+  }
+  #about-section {
+    height: 90vh;
+    align-content: flex-start;
+    padding: 45px;
+  }
+}
+
 #contact {
     height: 100vh;
     background-color:#383838;
