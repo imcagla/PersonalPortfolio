@@ -239,6 +239,7 @@ li {
   right: -120%;
   left: 120%;
   top: 20%;
+  font-size: 1.2rem;
 }
 
 .blockright-desc {
@@ -246,6 +247,7 @@ li {
   right: 120%;
   left: -120%;
   top: 20%;
+  font-size: 1.2rem;
 }
 
 
@@ -269,9 +271,9 @@ li {
   }
 }
 
-@media (max-width: 366px) {
+@media (max-width: 584px) {
   body {
-    width: 366px;
+    width: 584px;
   }
   #work-section {
     height: 280vh;
@@ -279,10 +281,10 @@ li {
   .block1, .block2, .block3 {
     left: 10%;
     margin-bottom: 260px;
-    width: 300px;
+    width: 480px;
   }
   .work-img {
-    width: 300px !important;
+    width: 480px !important;
   }
   .blockleft-desc, .blockright-desc {
     position: absolute;
