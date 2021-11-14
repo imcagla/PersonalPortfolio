@@ -22,7 +22,7 @@
         <a class="nav-link active" aria-current="page" id="nav-text" onclick="skillAnim()" href="#about-section">About Me</a>
       </li>
       <li class="nav-item" id="nav-item-style">
-        <a class="nav-link" id="nav-text" href="#projects">Work</a>
+        <a class="nav-link" id="nav-text" href="#work-section">Work</a>
       </li>
       <li class="nav-item" id="nav-item-style">
         <a class="nav-link" id="nav-text" href="#contact">Contact</a>
@@ -81,7 +81,7 @@
   </section>
 
   <!--Projects Section-->
-  <section id="projects">
+  <section id="projects" class="d-none">
     <div class="row">
       <div class="card-deck offset-sm-1 col-sm-3">
         <div class="card card-style text-dark bg-light mb-3">
@@ -123,6 +123,50 @@
     
   </section>
 
+  <!--Galeri-->
+  <section id="work-section">
+    <div class="ps-5 pb-3">
+      <h3 class="work-header" >My Recent Works:</h3>
+    </div>
+    <div class="block1 " >
+      <figure>
+        <img src="https://raw.githubusercontent.com/imcagla/imcagla.github.io-tic-tac-toe/master/tictactoe.PNG" alt="" class="work-img">
+      </figure>
+      <div class="overlay">
+        <div class="work-title">
+          <a target="_blank" href="https://imcagla.github.io/imcagla.github.io-tic-tac-toe/">
+            <button class="btn btn-light btn-lg">Tic-Tac-Toe Game</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="block2" >
+      <figure>
+        <img src="https://raw.githubusercontent.com/imcagla/SurveyForm/master/surveyform.PNG" alt="" class="work-img">
+      </figure>
+      <div class="overlay">
+        <div class="work-title">
+          <a target="_blank" href="https://github.com/imcagla/SurveyForm">
+            <button class="btn btn-light btn-lg">Survey Form</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="block3">
+      <figure>
+        <img src="https://raw.githubusercontent.com/imcagla/TechnicalDocumentationPage/master/TechDoc.PNG" alt="" class="work-img">
+      </figure>
+      <div class="overlay">
+        <div class="work-title">
+          <a target="_blank" href="https://github.com/imcagla/TechnicalDocumentationPage">
+            <button class="btn btn-light btn-lg">Documentation Page</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
   <!--Contact Section-->
   <section id="contact" class="d-flex justify-content-center flex-column align-items-center">
     <h1 class="contact-title">Feel free to contact with me!</h>
@@ -147,6 +191,8 @@
       </ul>
     </div>
   </section>
+
+
   <footer>
     
   </footer>
