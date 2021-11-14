@@ -251,15 +251,38 @@ li {
 
 @media (max-width: 741px) {
   #work-section {
-    height: 260vh;
+    height: 280vh;
   }
   .block1, .block2, .block3 {
     left: 10%;
-    margin-bottom: 210px;
+    margin-bottom: 260px;
     width: 80vw;
   }
   .work-img {
     width: 80vw !important;
+  }
+  .blockleft-desc, .blockright-desc {
+    position: absolute;
+    top: 103%;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 366px) {
+  body {
+    width: 366px;
+  }
+  #work-section {
+    height: 280vh;
+  }
+  .block1, .block2, .block3 {
+    left: 10%;
+    margin-bottom: 260px;
+    width: 300px;
+  }
+  .work-img {
+    width: 300px !important;
   }
   .blockleft-desc, .blockright-desc {
     position: absolute;
