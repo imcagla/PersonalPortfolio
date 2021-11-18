@@ -4,6 +4,7 @@ let skillSet = document.getElementById("skill-set");
 let toolBox = document.getElementById("tool-box");
 let skillItem = document.getElementsByClassName("skill-item")
 let meText = document.getElementById("me-text");
+let toolHeader = document.getElementById("tool-box-header");
 
 function skillAnim() {
     for (item in skillBars) {
@@ -17,6 +18,9 @@ function showSkills() {
   toolBox.classList.add("tool-box-anim2");
   meText.classList.remove("invisible");
   meText.classList.add("me-text-anim");
+  toolHeader.classList.remove("invisible");
+  toolHeader.classList.add("skill-set-anim");
+
 
   for (item in skillItem) {
     skillItem[item].classList.add("skill-set-anim");
