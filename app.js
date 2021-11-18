@@ -1,10 +1,25 @@
 let skillBars = document.getElementsByClassName("progress");
 let navMenu = document.getElementById("navbar");
+let skillSet = document.getElementById("skill-set");
+let toolBox = document.getElementById("tool-box");
+let skillItem = document.getElementsByClassName("skill-item")
+let meText = document.getElementById("me-text");
 
 function skillAnim() {
     for (item in skillBars) {
         skillBars[item].setAttribute("class", "progress mt-1 skills-anim");
     }
+}
+
+function showSkills() {
+  skillSet.classList.remove("d-none");
+  toolBox.classList.remove("tool-box-anim");
+  meText.classList.remove("invisible");
+  meText.classList.add("me-text-anim");
+
+  for (item in skillItem) {
+    skillItem[item].classList.add("skill-set-anim");
+  }
 }
 
 function mobileMenu() {
