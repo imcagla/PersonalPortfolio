@@ -30,6 +30,7 @@ body {
 }
 
 #navbar {
+  position: absolute;
     background-color:rgba(255, 255, 255, 0.2);
     border: 0.5px ridge rgba(255, 255, 255, 0.2);
   }
@@ -378,26 +379,50 @@ li {
 }
 
 .tool-box-anim {
-  animation: shake 0.2s;
+  animation: shake 0.25s;
   animation-iteration-count: infinite;
   cursor: pointer;
 }
 
 @keyframes shake {
   0% {
-    transform: translate(5px,5px) rotate(5deg) ;
+    transform: translate(7px,7px) rotate(10deg) ;
   }
   20% {
-    transform: translate(5px,5px) rotate(0deg) ;
+    transform: translate(7px,7px) rotate(0deg) ;
   }
   60% {
-    transform: translate(5px,5px) rotate(-5deg) ;
+    transform: translate(7px,7px) rotate(-10deg) ;
   }
   80% {
-    transform: translate(5px,5px) rotate(0deg) ;
+    transform: translate(7px,7px) rotate(0deg) ;
   }
   100% {
-    transform: translate(5px,5px) rotate(5deg) ;
+    transform: translate(7px,7px) rotate(10deg) ;
+  }
+}
+
+.tool-box-anim2 {
+  animation: shakeslow 1.5s;
+  cursor: pointer;
+  animation-timing-function: ease-in;
+}
+
+@keyframes shakeslow {
+  0% {
+    transform: translate(15px,15px) rotate(15deg) ;
+  }
+  25% {
+    transform: translate(10px,10px) rotate(-15deg) ;
+  }
+  50% {
+    transform: translate(10px,10px) rotate(15deg) ;
+  }
+  75% {
+    transform: translate(1px,1px) rotate(-15deg) ;
+  }
+  100% {
+    transform: translate(1px,1px) rotate(0deg) ;
   }
 }
 
@@ -444,5 +469,24 @@ li {
 }
 
 .fa-css3-alt {
-  color: rgb(0, 153, 255);
+  color: #0099ff;
+}
+
+#fixed-menu {
+  position:fixed;
+  bottom: 0vh;
+  right: 2vw;
+  z-index: 999999;
+  text-align: center;
+}
+
+#fixed-menu li a {
+  color: black;
+}
+
+#fixed-menu li a:hover {
+  color: black;
+  animation-name: colorslide;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
 }

@@ -14,6 +14,7 @@ function skillAnim() {
 function showSkills() {
   skillSet.classList.remove("d-none");
   toolBox.classList.remove("tool-box-anim");
+  toolBox.classList.add("tool-box-anim2");
   meText.classList.remove("invisible");
   meText.classList.add("me-text-anim");
 
@@ -24,6 +25,7 @@ function showSkills() {
 
 function mobileMenu() {
     const largeMenu = navMenu.innerHTML;
+    const noMenu = `<a href="#welcome-section"><i class="far fa-star ms-4 fa-2x text-danger"></i></a>`
     const menuIcon = `<a href="#welcome-section"><i class="far fa-star ms-4 fa-2x text-danger"></i></a>
     <a href="#mobile-menu" class="ms-auto me-4"><i class="fas fa-bars text-light fa-2x"></i></a>`;
     const smallMenu = `<a href="#welcome-section"><i class="far fa-star ms-4 fa-2x text-danger"></i></a>
@@ -39,13 +41,13 @@ function mobileMenu() {
       </li>
     </ul> `
 
-    //mediaQuery.matches && (navMenu.innerHTML = menuIcon) ;
-    (window.innerWidth < 575) ? (navMenu.innerHTML = smallMenu) : (navMenu.innerHTML = largeMenu);
+    mediaQuery.matches && (navMenu.innerHTML = noMenu) ;
+    //(window.innerWidth < 575) ? (navMenu.innerHTML = smallMenu) : (navMenu.innerHTML = largeMenu);
 }
-//var mediaQuery = window.matchMedia("(max-width: 575px)");
+var mediaQuery = window.matchMedia("(max-width: 575px)");
 
-//mobileMenu(mediaQuery);
-window.addEventListener('resize', mobileMenu());
+mobileMenu(mediaQuery);
+//window.addEventListener('resize', mobileMenu());
 
 
 // console.log(mediaQuery);
@@ -53,5 +55,5 @@ window.addEventListener('resize', mobileMenu());
 //      this.mobileMenu();
 //  });
 
-// // mediaQuery.addListener(mobileMenu);
+mediaQuery.addListener(mobileMenu);
 
