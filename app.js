@@ -5,6 +5,8 @@ let toolBox = document.getElementById("tool-box");
 let skillItem = document.getElementsByClassName("skill-item")
 let meText = document.getElementById("me-text");
 let toolHeader = document.getElementById("tool-box-header");
+let fixedMenu = document.getElementById("fixed-menu");
+let aboutSection = document.getElementById("about-section");
 
 function skillAnim() {
     for (item in skillBars) {
@@ -24,6 +26,24 @@ function showSkills() {
 
   for (item in skillItem) {
     skillItem[item].classList.add("skill-set-anim");
+  }
+}
+
+
+window.addEventListener('scroll', appear)
+
+function appear() {
+  let windowHeight = window.innerHeight;
+  let appeartop = aboutSection.getBoundingClientRect().top;
+  let appearpoint = 400;
+  console.log("windowheight",windowHeight)
+  console.log("top",appeartop)
+  console.log("point",appearpoint)
+
+  if(appeartop < windowHeight - appearpoint) {
+    fixedMenu.classList.add('appear')
+  } else {
+    fixedMenu.classList.remove('appear')
   }
 }
 
