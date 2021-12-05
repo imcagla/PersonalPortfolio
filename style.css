@@ -60,6 +60,10 @@ body {
   color: white;
 }
 
+.design-link:hover {
+  color: #fa79aa;
+}
+
 .card-img-top {
   width: 100%;
   height: 50vh;
