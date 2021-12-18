@@ -7,6 +7,8 @@ let meText = document.getElementById("me-text");
 let toolHeader = document.getElementById("tool-box-header");
 let fixedMenu = document.getElementById("fixed-menu");
 let aboutSection = document.getElementById("about-section");
+let workSection = document.getElementById("work-section");
+let workBlocks = document.getElementsByClassName("work-block");
 
 function skillAnim() {
     for (item in skillBars) {
@@ -36,9 +38,6 @@ function appear() {
   let windowHeight = window.innerHeight;
   let appeartop = aboutSection.getBoundingClientRect().top;
   let appearpoint = 400;
-  console.log("windowheight",windowHeight)
-  console.log("top",appeartop)
-  console.log("point",appearpoint)
 
   if(appeartop < windowHeight - appearpoint) {
     fixedMenu.classList.add('appear')
@@ -46,6 +45,31 @@ function appear() {
     fixedMenu.classList.remove('appear')
   }
 }
+
+window.addEventListener('scroll', appearWork)
+
+function appearWork() {
+  let windowHeight = window.innerHeight;
+  let appearpoint = 75;
+  let workSectionTop = workSection.getBoundingClientRect().top;
+
+  if(workSectionTop <= 412){
+    for(let i=0; i<workBlocks.length; i++) {
+      let appeartop = workBlocks[i].getBoundingClientRect().top;
+      //console.log("workblock top", appeartop)
+      if(appeartop < windowHeight - appearpoint){  
+        if(i%2 !== 0) workBlocks[i].classList.add('appear-work-left')
+        else workBlocks[i].classList.add('appear-work-right')
+      } else {
+        workBlocks[i].classList.remove('appear-work-left')
+        workBlocks[i].classList.remove('appear-work-right')
+      }
+  }
+
+  }
+  
+}
+
 
 function mobileMenu() {
     const largeMenu = navMenu.innerHTML;
