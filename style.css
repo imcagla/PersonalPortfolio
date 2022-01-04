@@ -197,7 +197,7 @@ li {
 }
 
 #work-section {
-  height: 210vh;
+  height: 300vh;
   background-color: #f5f5f5a4;
   padding-top: 10vh;
 }
@@ -501,7 +501,7 @@ li {
 
 @media (max-width: 810px) {
   #work-section {
-    height: 320vh;
+    height: 480vh;
   }
   .block1, .block2, .block3 {
     left: 10%;
