@@ -54,19 +54,28 @@ function appearWork() {
   let workSectionTop = workSection.getBoundingClientRect().top;
 
   if(workSectionTop <= 412){
-    for(let i=0; i<workBlocks.length; i++) {
+    //left and right slide animations buggy
+    // for(let i=0; i<workBlocks.length; i++) {
+    //   let appeartop = workBlocks[i].getBoundingClientRect().top;
+    //   //console.log("workblock top", appeartop)
+    //   if(appeartop < windowHeight - appearpoint){  
+    //     if(i%2 !== 0) workBlocks[i].classList.add('appear-work-left')
+    //     else workBlocks[i].classList.add('appear-work-right')
+    //   } else {
+    //     workBlocks[i].classList.remove('appear-work-left')
+    //     workBlocks[i].classList.remove('appear-work-right')
+    //   }
+    for(let i=0; i<workBlocks.length; i++){
       let appeartop = workBlocks[i].getBoundingClientRect().top;
-      //console.log("workblock top", appeartop)
+      
       if(appeartop < windowHeight - appearpoint){  
-        if(i%2 !== 0) workBlocks[i].classList.add('appear-work-left')
-        else workBlocks[i].classList.add('appear-work-right')
+        workBlocks[i].classList.add('appear-work')
       } else {
-        workBlocks[i].classList.remove('appear-work-left')
-        workBlocks[i].classList.remove('appear-work-right')
-      }
+        workBlocks[i].classList.remove('appear-work')
+      }}
   }
 
-  }
+
   
 }
 
